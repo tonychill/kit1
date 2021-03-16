@@ -1,0 +1,1 @@
+This foleder should be used for AWS cloud infra. 
