@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <header className="fixed top-0 z-50 shadow-md w-full px-8 text-gray-700 bg-white body-font">
+        {/* <header className="fixed top-0 z-50 shadow-md w-full px-8 text-gray-700 bg-white body-font">
           <div className="container flex flex-col flex-wrap items-center justify-between py-5 mx-auto md:flex-row max-w-7xl">
             <a
               href="#_"
@@ -55,7 +55,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </header>
+        </header> */}
         <section className="pt-24 pb-32 bg-white">
           <div className="px-8 mx-auto max-w-7xl lg:px-12 xl:px-16">
             <div className="flex flex-col lg:flex-row">
@@ -135,19 +135,22 @@ export default function Home() {
                     <img src="https://bookluxurycar.com/listing_image/original/Lamborghini-HURAC%C3%81N-LP-610-4-car.png" className="w-full h-auto" />
                   </div>
                   <div className="flex items-center justify-center w-full h-auto col-span-2 p-3 overflow-hidden transform bg-white rounded-lg shadow-xl -rotate-3">
-                    <img
-                      src="https://southernboating.com/wp-content/uploads/2015/08/Nor-Tech-390-Sport-Open-1024x600.jpg"
-                      className="w-full h-auto"
-                    />
+                    <img src="https://southernboating.com/wp-content/uploads/2015/08/Nor-Tech-390-Sport-Open-1024x600.jpg" className="w-full h-auto" />
                   </div>
                   <div className="flex items-center justify-center w-full h-auto col-span-2 p-3 overflow-hidden transform bg-white rounded-lg shadow-xl -rotate-3">
                     <img src="https://www.blackfinboats.com/zupload/library/32/-234-800x600-0.jpg" className="w-full h-auto" />
                   </div>
                   <div className="flex items-center justify-center w-full h-auto col-span-2 p-3 overflow-hidden transform bg-white rounded-lg shadow-xl -rotate-3">
-                    <img src="https://cnet1.cbsistatic.com/img/6u2kmEm0RJUfcSgupFaBkEsKeK4=/940x0/2020/02/13/ae1b9b28-ac0f-4b16-90c7-1f232b6633e4/press00-model-x-rear-three-quarter-with-doors-open.jpg" className="w-full h-auto" />
+                    <img
+                      src="https://cnet1.cbsistatic.com/img/6u2kmEm0RJUfcSgupFaBkEsKeK4=/940x0/2020/02/13/ae1b9b28-ac0f-4b16-90c7-1f232b6633e4/press00-model-x-rear-three-quarter-with-doors-open.jpg"
+                      className="w-full h-auto"
+                    />
                   </div>
                   <div className="flex items-center justify-center w-full h-auto col-span-2 p-3 overflow-hidden transform bg-white rounded-lg shadow-xl -rotate-3">
-                    <img src="https://cdn.static-carindigo.com/tr:w-1260,h-630,ow-103.33333333333,oi-carindigo@images@carindigo_logo_white.png,ox-10,oy-10,di-no_image_SJKGShVtN.png/images/news/featured_2021-lucid-air-sedan-price-interior-performance-range-charging-time-features-rivals_1599813839.jpg" className="w-full h-auto" />
+                    <img
+                      src="https://cdn.static-carindigo.com/tr:w-1260,h-630,ow-103.33333333333,oi-carindigo@images@carindigo_logo_white.png,ox-10,oy-10,di-no_image_SJKGShVtN.png/images/news/featured_2021-lucid-air-sedan-price-interior-performance-range-charging-time-features-rivals_1599813839.jpg"
+                      className="w-full h-auto"
+                    />
                   </div>
                 </div>
                 <div className="absolute top-0 right-0 z-10 w-full h-full mt-4 -mr-5 transform scale-125 rotate-45">

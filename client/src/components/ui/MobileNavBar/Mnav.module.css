@@ -1,0 +1,21 @@
+.root {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  box-shadow: rgb(0 0 0 / 6%) 0px 3px 6px;
+  min-height: 85px;
+  justify-content: center;
+  background-color: #fff;
+  display: flex;
+  z-index: 40;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-direction: column;
+  min-height: 85px;
+}
+
+@media only screen and (min-width: 500px) {
+  .root {
+    display: none;
+  }
+}

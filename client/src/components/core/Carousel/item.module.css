@@ -1,0 +1,10 @@
+.media_bg {
+  min-height: 149px !important;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.error {
+  background-position: 50% 50%;
+  background-size: cover;
+}

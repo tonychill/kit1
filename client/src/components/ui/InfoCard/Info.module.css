@@ -1,0 +1,20 @@
+.root {
+  margin-bottom: 16px;
+  width: 33%;
+}
+.inner_wrap > section {
+  margin-bottom: 12px;
+}
+.inner_wrap {
+  margin-right: 8px;
+  margin-left: 8px;
+  border: 1px solid #e8eefa;
+  border-radius: 8px;
+  padding: 16px;
+  min-height: 173px;
+  /* display: flex;
+  justify-content: flex-start; */
+}
+.icon {
+  height: 32px;
+}

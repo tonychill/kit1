@@ -1,0 +1,1 @@
+https://medium.com/javascript-in-plain-english/creating-a-confirm-dialog-in-react-and-tailwind-css-3b99f6e56fab

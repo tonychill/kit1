@@ -1,0 +1,77 @@
+.root {
+  margin-top: 32px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.root > span {
+  margin-top: -4px;
+}
+.form_wrap {
+  /* border: solid 1px #000; */
+  border-radius: 12px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.06);
+}
+.form_wrap_inner {
+  padding: 28px;
+}
+.form_wrap_inner > section {
+  margin-bottom: 24px;
+}
+.form_wrap_inner > section:last-child {
+  margin-bottom: 0px;
+}
+.form_wrap_inner > section > div {
+  margin-bottom: 16px;
+}
+.cta {
+  min-height: "235px";
+  color: #fff;
+  border: "2px solid #f9f9f96b";
+  box-shadow: "2px 2px";
+  width: "100%";
+  padding: "12px";
+  /* background-image: "url(https://images.squarespace-cdn.com/content/v1/5307d31be4b0353d249bd2ca/1558048785187-UWPTRGJ6ET00QTDJHF5F/ke17ZwdGBToddI8pDm48kB6N0s8PWtX2k_eW8krg04V7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1URWK2DJDpV27WG7FD5VZsfFVodF6E_6KI51EW1dNf095hdyjf10zfCEVHp52s13p8g/new-yorkers-vacation-illustration.jpg)"; */
+
+  /* 
+  cta: {
+    minHeight: 235,
+    border: "2px solid #f9f9f96b",
+    boxShadow: theme.shadows[1],
+    borderRadius: 12,
+    width: "100%",
+    padding: 12,
+    backgroundImage:
+      ,
+    backgroundSize: "cover",
+  }, */
+}
+
+.mw-340 {
+  max-width: 340px;
+  min-width: 340px;
+}
+.sug-box {
+  height: 200px;
+  width: 97%;
+
+  border-radius: 5px;
+  margin: auto;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 499px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  .something {
+    display: none;
+  }
+}
+
+.request_form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.request_form_elements {
+  display: flex;
+}
