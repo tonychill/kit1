@@ -21,7 +21,7 @@ function Kit1({ Component, pageProps }: AppProps) {
     <Fragment>
       <Layout {...pageProps}>
         {" "}
-        {/* <NavBar /> */}
+        <NavBar navLinks={navlinks} />
         <Component {...pageProps} />
       </Layout>
     </Fragment>

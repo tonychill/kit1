@@ -14,7 +14,7 @@ const NavBar: FC<NavProps> = ({ navLinks }) => {
     <header className="fixed top-0 z-50 w-full shadow-md sm:px-8 text-gray-700 bg-white body-font xxmotion-safe:animate-fadeIn" style={{ background: "#fff" }}>
       <div className="container flex flex-col flex-wrap items-center justify-between py-3 sm:py-5 mx-auto md:flex-row max-w-7xl">
         <div className="hidden sm:flex items-center order-first mb-4 font-medium text-gray-900 lg:order-none lg:w-auto title-font lg:items-center lg:justify-center md:mb-0">
-          <Link href="/" text={"tony"}>
+          <Link href="/" text={"YOUR LOGO"}>
             <a>
               <span className="text-xl font-black leading-none text-gray-900 select-none logo"></span>
             </a>
@@ -22,7 +22,7 @@ const NavBar: FC<NavProps> = ({ navLinks }) => {
         </div>
         <div className="flex-grow ">
           <div className=" flex justify-center sm:justify-start ">
-            <Search />
+            {/* <Search /> */}
 
             {/* <button
                 className=" px-3 leading-6 font-medium flex items-center space-x-3 sm:space-x-4 hover:text-gray-400 transition-colors duration-200 w-full py-2 text-gray-300 focus:outline-none "

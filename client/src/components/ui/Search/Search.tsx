@@ -141,7 +141,7 @@ const Search: FC<SearchProps> = ({ hits, refine, currentRefinement }) => {
 
 const ConnectedSearch = connectAutoComplete(Search);
 
-const searchClient = algoliasearch("IDU7F9CV9W", "2369f862dae0e682c2d21ebbc7cb427d");
+const searchClient = algoliasearch("IDU7F9CV9W", process.env.ALGOLIA_KEY);
 // // //TODO: There should some external logic that determines what index to connect to.
 
 const ConnectedInstaSearch: FC = ({}) => (
