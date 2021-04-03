@@ -4,14 +4,16 @@ import s from "./Media.module.css";
 
 interface MediaProps {
   type: "single" | "multi";
-  media: string | string[];
+  media: { src: any; link: any }[] | string;
 }
 
 const Media: FC<MediaProps> = ({ media, type }) => {
   return (
-    <div className="flex">
-      <div className="m-auto p-4 ">
-        <div className="rounded overflow-hidden h-96">{renderSwitch(type)}</div>
+    <div className="cn:media sm:overflow-hidden flex h-full">
+      <div className="m-auto w-full ">
+        <div className=" pt-[66.666667%] relative bg-center bg-no-repeat w-full">
+          <div className="absolute inset-0 h-full w-full   ">{renderSwitch(type)}</div>
+        </div>
       </div>
     </div>
   );
@@ -22,7 +24,7 @@ const Media: FC<MediaProps> = ({ media, type }) => {
         return <>{typeof media === "string" ? <img src={media} /> : null}</>;
         break;
       case "multi":
-        return <>{typeof media === "object" ? <Carousel images={media} /> : null}</>;
+        return <>{Array.isArray(media) ? <Carousel images={media} /> : null}</>;
         break;
     }
   }

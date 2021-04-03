@@ -1,5 +1,6 @@
-import { FC, ComponentType, useEffect } from "react";
+import { FC, ComponentType } from "react";
 import Card from "../Card";
+import { ExperienceFields } from "../../../ts/page-props";
 import { Masonry } from "masonic";
 
 interface MasonicViewProps {
@@ -12,14 +13,13 @@ interface Story {
   data: object;
 }
 
-interface StoryCardProps {
+interface CardWithDataProps {
   data: string;
 }
+
 const MasonicView: FC<MasonicViewProps> = ({ getTheStory, stories, maybeLoadMore }) => {
-  const StoryCard: ComponentType<StoryCardProps> = ({ data }) => <Card type="story" data={data} />;
-  return (
-    <Masonry className="focus:outline-none"  items={stories} columnGutter={32} columnWidth={250} overscanBy={1.25} render={StoryCard} />
-  );
+  const CardWithData: FC<CardWithDataProps> = ({ data }) => <Card kind="story" data={data} />;
+  return <Masonry className="focus:outline-none" items={stories} columnGutter={32} columnWidth={250} overscanBy={1.25} render={CardWithData} />;
 };
 
 export default MasonicView;

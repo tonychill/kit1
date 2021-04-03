@@ -1,2 +1,2 @@
-export { default } from "./StoryFeed";
-export * from "./StoryFeed";
+export { default } from "./Feed";
+export * from "./Feed";

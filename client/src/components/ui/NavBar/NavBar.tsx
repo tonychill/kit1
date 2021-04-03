@@ -1,17 +1,17 @@
 import { NavProps, NavLink } from "../../../ts";
-import {  AuthContext } from "../../../context";
+import { GlobalContext } from "../../../context";
 import { FC, useContext, useState } from "react";
 import Link from "../../core/Link";
-import Type from "../../core/Type";
 import Modal from "../../core/Modal";
 import Search from "../Search";
+import Button from "../../core/Button";
 
-const NavBar: FC<NavProps> = ({ navLinks }) =>{
-  const { session, handleLogIn, handleLogOut } = useContext(AuthContext);
+const NavBar: FC<NavProps> = ({ navLinks }) => {
+  const { session, handleLogIn, handleLogOut } = useContext(GlobalContext);
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 z-50 w-full shadow-md sm:px-8 text-gray-700 bg-white body-font motion-safe:animate-fadeIn" style={{ background: "#fff" }}>
+    <header className="fixed top-0 z-50 w-full shadow-md sm:px-8 text-gray-700 bg-white body-font xxmotion-safe:animate-fadeIn" style={{ background: "#fff" }}>
       <div className="container flex flex-col flex-wrap items-center justify-between py-3 sm:py-5 mx-auto md:flex-row max-w-7xl">
         <div className="hidden sm:flex items-center order-first mb-4 font-medium text-gray-900 lg:order-none lg:w-auto title-font lg:items-center lg:justify-center md:mb-0">
           <Link href="/" text={"tony"}>
@@ -20,12 +20,11 @@ const NavBar: FC<NavProps> = ({ navLinks }) =>{
             </a>
           </Link>
         </div>
-        <div className="flex-grow w-full sm:w-auto">
-          <div className="sm:ml-8 px-1 mx-3 rounded-lg  md:max-w-sm " style={{ backgroundColor: "#fff" }}>
-            <div className=" flex justify-center sm:justify-start h-12">
-            
-                <Search />
-              {/* <button
+        <div className="flex-grow ">
+          <div className=" flex justify-center sm:justify-start ">
+            <Search />
+
+            {/* <button
                 className=" px-3 leading-6 font-medium flex items-center space-x-3 sm:space-x-4 hover:text-gray-400 transition-colors duration-200 w-full py-2 text-gray-300 focus:outline-none "
                 // value=""
 
@@ -37,12 +36,11 @@ const NavBar: FC<NavProps> = ({ navLinks }) =>{
 
                 <span> What are you looking for?</span>
               </button> */}
-              {/* TODO: Implement filter options */}
-              {/* <div className="">
+            {/* TODO: Implement filter options */}
+            {/* <div className="">
               <span style={{ width: 1 }} className=" rounded-lg mr-2 h-6 w-1/12 bg-gray-200"></span>
               <FilterButton size={33} />
             </div> */}
-            </div>
           </div>
         </div>
         <div className="hidden sm:flex flex-col md:flex-row">
@@ -69,12 +67,7 @@ const NavBar: FC<NavProps> = ({ navLinks }) =>{
             )}
 
             <span className="inline-flex rounded-md shadow-sm">
-              <button
-                onClick={() => console.log("sign up")}
-                className="inline-flex items-center justify-center px-4 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap transition duration-150 ease-in-out bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700"
-              >
-                Join
-              </button>
+              <Button text="Join" onClick={() => console.log("signing up... ")} />
             </span>
           </div>
         </div>

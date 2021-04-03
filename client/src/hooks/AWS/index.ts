@@ -1,0 +1,1 @@
+export { handleSignUp } from "./AwsAuth";

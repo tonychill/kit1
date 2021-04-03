@@ -1,14 +1,13 @@
 import clsx from "clsx";
 import styles from "./Info.module.css";
-import Icon from "../../core/Icon";
+import Icon from "../../core/Icons";
 import Type from "../../core/Type";
 //TODO: Add the following props to the InfoCard params: title, icon, label, note,
 const InfoCard = ({ type, idx }) => {
-  console.log(type);
   switch (type) {
     case "main-king":
       return (
-        <div className={clsx(styles.root)}>
+        <div className={clsx(" w-1/2 sm:w-1/3 mb-4")}>
           <div className={clsx(styles.inner_wrap)}>
             <section>
               <div className={styles.item_wrap}>

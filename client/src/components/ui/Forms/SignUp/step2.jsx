@@ -2,17 +2,15 @@ import Type from "../../../core/Type";
 // import Button from "@material-ui/core/Button";
 // import ListColumn from "../../Bits/List/listcolumn";
 // import data from "../../../hooks/test.data.json";
-// import Payments from "../../Bytes/PaymentInput";
+import PaymentForm from "../../PaymentForm";
 
-export default ({ paymentHelpers }) => {
-  const { setStep } = paymentHelpers;
-
+export default ({ handleStepChange }) => {
   return (
     <div container spacing={3}>
       <div>
         <div container>
-          <div item xs={4}></div>
-          <div item xs={8}>
+          <div></div>
+          <div>
             <div container>
               <div>
                 <Type variant="caption">VIP Membership Plan</Type>
@@ -28,17 +26,16 @@ export default ({ paymentHelpers }) => {
       <div>{/* <ListColumn columns="1" items={data.features} /> */}</div>
 
       <div>
-        <Payments paymentHelpers={paymentHelpers} />
+        <PaymentForm handleStepChange={handleStepChange} />
       </div>
       <div>
         {process.env.NODE_ENV === "development" ? (
           <div>
-            {" "}
             <button
               type="submit"
               onClick={() => {
-                localStorage.clubSignupPhase = 0;
-                setStep(0);
+                localStorage.signUpStep = 0;
+                handleStepChange(0);
               }}
             >
               Beginning Step
@@ -46,8 +43,8 @@ export default ({ paymentHelpers }) => {
             <button
               type="submit"
               onClick={() => {
-                localStorage.clubSignupPhase = 0;
-                setStep(2);
+                localStorage.signUpStep = 0;
+                handleStepChange(2);
               }}
             >
               Welcome step

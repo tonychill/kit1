@@ -5,7 +5,6 @@ import { Hit } from "react-instantsearch-core";
 import { AutoCompleteProps } from "../../../ts";
 import algoliasearch from "algoliasearch/lite";
 import { InstantSearch, connectAutoComplete } from "react-instantsearch-dom";
-import ExperienceCard from "../ExperienceCard";
 import FilterButton from "../../core/Button/FilterButton";
 import GoBackIcon from "../../core/Icon/GoBack";
 
@@ -40,7 +39,6 @@ const AutoComplete: FC<AutoCompleteProps> = ({ hits, refine, currentRefinement, 
           </div>
         </div>
       </div>
-      {/* TODO: Add logic so the search hits will either slide up or open a modal when the search input has focus */}
       {/* <div className=" sm:mt-24">
         <div className="grid grid-cols-4 gap-8 sm:mt-10 sm:grid-cols-8 lg:grid-cols-12 sm:px-8 xl:px-2">
           <ul>
@@ -71,6 +69,3 @@ const AutoCompleteSearch: FC<AutoProps> = ({ toggleModal }) => (
 
 export default AutoCompleteSearch;
 
-{
-  /* <ExperienceCard key={idx} id={hit.objectId} title={hit.name} price={+hit.rate} media={hit.imageUrl} description={hit.description} /> */
-}

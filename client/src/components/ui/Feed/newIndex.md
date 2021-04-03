@@ -1,6 +1,6 @@
 import { useInfiniteLoader } from "masonic";
 import { useEffect, useState, FC } from "react";
-import { getContentx } from "../../hooks/contentful";
+import { getContent } from "../../hooks/contentful";
 
 // import CTA from "../../Elements/Cta";
 
@@ -49,7 +49,7 @@ type: "story",
 from: "useEffect",
 };
 
-      setLocalStories(await getContentx(params));
+      setLocalStories(await getContent(params));
     } catch (error) {
       console.log(error);
     }
@@ -64,7 +64,7 @@ const skip = startIndex;
 const limit = stopIndex - startIndex + 1;
 
     try {
-      const nextItems = await getContentx({ skip, limit, type: "story" });
+      const nextItems = await getContent({ skip, limit, type: "story" });
       if (nextItems.length > 0) handleLocalStoryUpdate(localStories, nextItems);
     } catch (error) {
       console.log("Error from spread attempt:  ", error);

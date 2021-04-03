@@ -19,7 +19,8 @@ const navlinks = [
 function Kit1({ Component, pageProps }: AppProps) {
   return (
     <Fragment>
-      <Layout>
+      <Layout {...pageProps}>
+        {" "}
         {/* <NavBar /> */}
         <Component {...pageProps} />
       </Layout>

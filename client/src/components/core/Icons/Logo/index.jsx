@@ -2,7 +2,7 @@ import clsx from "clsx";
 
 function Logo({ className, alt }) {
   return (
-    <svg className={clsx(className)} alt={alt} viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+    <svg className={clsx(className)} alt={alt} viewBox="0 0 40 40">
       <defs>
         <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="a">
           <stop stop-color="#2397B3" offset="0%"></stop>

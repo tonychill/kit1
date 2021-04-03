@@ -2,9 +2,9 @@ import { FC, useState } from "react";
 
 import Modal from "../../Modal";
 import { FilterButtonProps } from "../../../../ts";
-/**TODO: 
- * 1. Create a single icon component that renders icons based on the prop value passed to it. 
- * 2. Move this over to the Icon component and fucure out how to deal with loading the modal. 
+/**TODO:
+ * 1. Create a single icon component that renders icons based on the prop value passed to it.
+ * 2. Move this over to the Icon component and fucure out how to deal with loading the modal.
  * */
 const FilterButton: FC<FilterButtonProps> = ({ size }) => {
   const [open, setOpen] = useState(false);
@@ -12,7 +12,7 @@ const FilterButton: FC<FilterButtonProps> = ({ size }) => {
   return (
     <div className="flex mr-1 justify-center items-center  rounded-sm ">
       <button onClick={toggleOpen} className="focus:outline-none">
-        <svg id="Component_83_1" data-name="Component 83 – 1" xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 33 33">
+        <svg id="Component_83_1" data-name="Component 83 – 1" width={size} height={size} viewBox="0 0 33 33">
           <rect id="Rectangle_1098" data-name="Rectangle 1098" width={size} height={size} rx={6} fill="#f7f7f7" />
           <g id="Group_1380" data-name="Group 1380" transform="translate(19251.051 14733)">
             <g id="Rectangle_1096" data-name="Rectangle 1096" transform="translate(-19244.051 -14724)" fill="#fff" stroke="#000345" strokeWidth={1}>
